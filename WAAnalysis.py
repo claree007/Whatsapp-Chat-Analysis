@@ -181,8 +181,6 @@ def top_emoji(n):
     
     top_emojis = nltk.FreqDist(emojis)
     common_emojis = top_emojis.most_common(n)
-    # print(common_emojis)
-    # exit(0)
     # common_emojis is a tuple (emoji, occurances)
 
     x = [e[0].decode("utf-8") for e in common_emojis]
